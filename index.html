@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>multi-step-form-main</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/app.js" defer></script>
+    <script src="package-lock.json"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="step-container">
+          <p class="step-no active">1</p>
+          <div class="step-details">
+            <p class="step-title">Step 1</p>
+            <p class="step-inf">Your info</p>
+          </div>
+        </div>
+        <div class="step-container">
+          <p class="step-no">2</p>
+          <div class="step-details">
+            <p class="step-title">Step 2</p>
+            <p class="step-inf">Select plan</p>
+          </div>
+        </div>
+        <div class="step-container">
+          <p class="step-no">3</p>
+          <div class="step-details">
+            <p class="step-title">Step 3</p>
+            <p class="step-inf">Add-ons</p>
+          </div>
+        </div>
+        <div class="step-container">
+          <p class="step-no">4</p>
+          <div class="step-details">
+            <p class="step-title">Step 4</p>
+            <p class="step-inf">Summary</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="step1 step show">
+          <div class="right-side-info">
+            <h3 class="right-side-title">Personal info</h3>
+            <p class="title-info">
+              Please provide your name, email address, and phone number.
+            </p>
+          </div>
+
+          <div class="right-side-details">
+            <label for="name">Name</label>
+
+            <input type="text" id="name" placeholder="e.g. Stephen King" />
+            <label for="email">Email Address</label>
+
+            <input
+              type="email"
+              id="email"
+              placeholder="e.g. stephenking@lorem.com"
+            />
+            <label for="number"
+              >Phone Number <span>This field is required</span></label
+            >
+
+            <input
+              type="number"
+              id="phone"
+              placeholder=" e.g. +1 234 567 890"
+              required
+            />
+          </div>
+        </div>
+        <div class="step2 step">
+          <div class="right-side-info">
+            <h3 class="right-side-title">Select your plan</h3>
+            <p class="title-info">
+              You have the option of monthly or yearly billing.
+            </p>
+          </div>
+
+          <div class="right-side-details">
+            <div class="cards-step2">
+              <div class="card2 arcade">
+                <img src="images/icon-arcade.svg" alt="" />
+                <h3>Arcade</h3>
+                <p class="card2-price arcade-price">$90/yr</p>
+                <p class="card2-offer">2 months free</p>
+              </div>
+              <div class="card2 advanced">
+                <img src="images/icon-advanced.svg" alt="" />
+                <h3>Advanced</h3>
+                <p class="card2-price advanced-price">$120/yr</p>
+                <p class="card2-offer">2 months free</p>
+              </div>
+              <div class="card2 pro">
+                <img src="images/icon-pro.svg" alt="" />
+                <h3>Pro</h3>
+                <p class="card2-price pro-price">$150/yr</p>
+                <p class="card2-offer">2 months free</p>
+              </div>
+            </div>
+            <div class="plan">
+              <span>Monthly</span>
+              <label class="switch"> <div></div></label>
+              <span>Yearly</span>
+            </div>
+          </div>
+        </div>
+        <div class="step3 step">
+          <div class="right-side-info">
+            <h3 class="right-side-title">Pick add-ons</h3>
+            <p class="title-info">
+              Add-ons help enhance your gaming experience.
+            </p>
+          </div>
+
+          <div class="right-side-details">
+            <div class="cards3">
+              <div class="card3">
+                <div class="checkbox"><input type="checkbox" /></div>
+                <div class="card3-info">
+                  <h4 class="card3-title">Online service</h4>
+                  <p class="card3-details">Access to multiplayer games</p>
+                </div>
+                <p class="card3-plan one">+$1/mo</p>
+              </div>
+              <div class="card3">
+                <div class="checkbox"><input type="checkbox" /></div>
+                <div class="card3-info">
+                  <h4 class="card3-title">Larger storage</h4>
+                  <p class="card3-details">Extra 1TB of cloud save</p>
+                </div>
+                <p class="card3-plan two">+$2/mo</p>
+              </div>
+              <div class="card3">
+                <div class="checkbox"><input type="checkbox" /></div>
+                <div class="card3-info">
+                  <h4 class="card3-title">Customizable Profile</h4>
+                  <p class="card3-details">Custom theme on your profile</p>
+                </div>
+                <p class="card3-plan">+$2/mo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step4 step">
+          <div class="right-side-info">
+            <h3 class="right-side-title">Finishing up</h3>
+            <p class="title-info">
+              Double-check everything looks OK before confirming.
+            </p>
+          </div>
+
+          <div class="right-side-details">
+            <div class="chosen4">
+              <div class="period">
+                <h4 class="period-title">
+                  Arcade <a href="#" class="change">Change</a>
+                </h4>
+                <p class="period-price">$9/mo</p>
+              </div>
+              <hr />
+              <div class="service">
+                <p class="service-info">Online Service</p>
+                <p class="service-price">+$1/mo</p>
+              </div>
+              <div class="storage">
+                <p class="storage-info">Local storage</p>
+                <p class="storage-price">+$2/mo</p>
+              </div>
+
+              <div class="total">
+                <p class="total-info">Total (per month/year)</p>
+                <p class="total-price">+$12/mo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="thanks">
+        <img src="images/icon-thank-you.svg" alt="" />
+        <h2 class="thanks-title">Thank you!</h2>
+        <p class="thanks-info">
+          Thanks for confirming your subscription! We hope you have fun using
+          our platform. If you ever need support, please feel free to email us
+          at support@loremgaming.com.
+        </p>
+      </div>
+      <div class="btns">
+        <button class="go-back">Go back</button>
+        <button class="next-step">Next Step</button>
+      </div>
+    </div>
+  </body>
+</html>
